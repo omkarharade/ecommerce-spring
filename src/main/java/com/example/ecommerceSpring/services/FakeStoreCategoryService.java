@@ -4,6 +4,7 @@ import com.example.ecommerceSpring.dto.CategoryDTO;
 import com.example.ecommerceSpring.gateway.ICategoryGateway;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 
 @Service
@@ -16,8 +17,7 @@ public class FakeStoreCategoryService implements ICategoryService{
      }
 
     @Override
-    public List<CategoryDTO> getAllCategories() {
+    public List<CategoryDTO> getAllCategories() throws IOException {
         return this.categoryGateway.getAllCategories();
-
     }
 }
