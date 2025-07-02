@@ -2,12 +2,13 @@ package com.example.ecommerceSpring.gateway;
 
 import com.example.ecommerceSpring.dto.*;
 import com.example.ecommerceSpring.gateway.api.FakeStoreProductApi;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 
-
+@Primary
 @Component
 public class FakeStoreProductGateway implements IProductGateway{
 
