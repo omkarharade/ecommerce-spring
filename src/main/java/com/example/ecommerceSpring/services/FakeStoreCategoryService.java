@@ -13,7 +13,7 @@ public class FakeStoreCategoryService implements ICategoryService{
 
     private final ICategoryGateway categoryGateway;
 
-     public FakeStoreCategoryService(@Qualifier("fakeStoreCategoryGatewayOkhttp") ICategoryGateway _categoryGateway) {
+     public FakeStoreCategoryService(@Qualifier("fakeStoreRestTemplateGateway") ICategoryGateway _categoryGateway) {
          this.categoryGateway = _categoryGateway;
      }
 
